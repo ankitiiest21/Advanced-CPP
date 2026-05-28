@@ -10,6 +10,8 @@
    2. reset(): release or replace the ownership.
       e.g.-> shared_ptr<int> main_ptr = make_shared<int>(10); 
              main_ptr.reset(new int(20)); -> replacing the ownership
+   Use cases:Caching mechanisms, graphing/mesh structures, or multi-threaded 
+   resource sharing.
 */
 #include<iostream>
 #include<memory>

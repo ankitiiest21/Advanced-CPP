@@ -5,6 +5,8 @@
    resource it points to. Copying a std::unique_ptr<> is strictly
    forbidden, its copy constructor and copy assignment operator are
    explicitly = delete d.
+   Use cases: Local objects, factory methods, tracking resources 
+   with distinct lifetimes.
 */
 #include<iostream>
 #include<memory>
